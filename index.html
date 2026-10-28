@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manu Priya — Software Developer portfolio">
+  <title>Manu Priya | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Manu Priya home">manu<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Journey</a>
+        <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="live-dot"></span> SOFTWARE DEVELOPER · BENGALURU, INDIA</p>
+        <h1>Turning ideas<br>into <span class="gradient-text">digital reality.</span></h1>
+        <p class="hero-intro">Hey, I'm <strong>Manu Priya</strong> — a software developer who enjoys building useful, thoughtful, and responsive web experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+          <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-number">01</span><span>Curious by nature</span></div>
+          <div><span class="meta-number">02</span><span>Focused on the details</span></div>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative developer illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="floating-chip chip-code"><span>&lt;/&gt;</span> code</div>
+        <div class="floating-chip chip-bracket">{ }</div>
+        <div class="floating-chip chip-star">✳</div>
+        <div class="profile-card">
+          <div class="profile-card-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="mono">PROFILE.EXE</span></div>
+          <div class="profile-avatar">MP<span class="avatar-spark">✦</span></div>
+          <p class="profile-overline">HELLO, WORLD!</p>
+          <h2>Build. Learn.<br><span>Repeat.</span></h2>
+          <div class="profile-rule"></div>
+          <div class="profile-status"><span class="live-dot"></span> Open to meaningful opportunities</div>
+        </div>
+        <div class="art-caption mono">CREATIVE THINKING / CLEAN CODE</div>
+      </div>
+      <a href="#about" class="scroll-cue"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+        <h2>Developer by work.<br><span class="gradient-text">Problem-solver by nature.</span></h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-story reveal">
+          <p class="lead">I enjoy turning a rough idea into something people can actually use.</p>
+          <p>I'm a Computer Science and Engineering graduate with an interest in web development, backend systems, and practical digital products. I like learning by building, exploring how things work, and improving an experience one detail at a time.</p>
+          <p>My current focus is growing as a developer while creating reliable, accessible, and responsive applications.</p>
+          <a class="text-link" href="#contact">A project in mind? Let's connect <span>↗</span></a>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact"><span class="fact-index">A</span><div><small>EDUCATION</small><strong>B.E. Computer Science & Engineering</strong><p>Graduated in 2024</p></div></div>
+          <div class="fact"><span class="fact-index">B</span><div><small>CURRENT ROLE</small><strong>Software Developer Trainee</strong><p>SJS Digital Solutions Pvt Ltd</p></div></div>
+          <div class="fact"><span class="fact-index">C</span><div><small>BASED IN</small><strong>Bengaluru, India</strong><p>Open to learning and collaboration</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / MY TOOLKIT</p>
+          <h2>Tools I use to <span class="gradient-text">make things work.</span></h2>
+          <p class="section-subtitle">A growing toolkit for building across the stack.</p>
+        </div>
+        <div class="filter-row reveal" role="group" aria-label="Filter skills">
+          <button class="filter-btn is-active" data-filter="all">All skills</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="data">Data & tools</button>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-tile reveal" data-category="frontend"><span class="skill-mark">H</span><div><h3>HTML5</h3><p>Semantic structure</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="frontend"><span class="skill-mark">C</span><div><h3>CSS3</h3><p>Responsive layouts</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="frontend"><span class="skill-mark">JS</span><div><h3>JavaScript</h3><p>Interactive interfaces</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="frontend"><span class="skill-mark">R</span><div><h3>React</h3><p>Component-based UI</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="backend"><span class="skill-mark">Py</span><div><h3>Python</h3><p>Application logic</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="backend"><span class="skill-mark">Fl</span><div><h3>Flask</h3><p>Web applications</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="backend"><span class="skill-mark">Ph</span><div><h3>PHP</h3><p>Server-side basics</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="data"><span class="skill-mark">My</span><div><h3>MySQL</h3><p>Relational databases</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="data"><span class="skill-mark">Fb</span><div><h3>Firebase</h3><p>Hosting & cloud data</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="data"><span class="skill-mark">Git</span><div><h3>Git & GitHub</h3><p>Version control</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="data"><span class="skill-mark">VS</span><div><h3>VS Code</h3><p>Development workflow</p></div><span class="tile-arrow">↗</span></article>
+          <article class="skill-tile reveal" data-category="data"><span class="skill-mark">BI</span><div><h3>Power BI</h3><p>Data visualization</p></div><span class="tile-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="work">
+      <div class="work-heading reveal">
+        <div class="section-heading">
+          <p class="eyebrow">03 / SELECTED PROJECTS</p>
+          <h2>Some things I've <span class="gradient-text">been building.</span></h2>
+        </div>
+        <p class="section-subtitle">A few projects from my learning and development journey.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-visual visual-loan"><span class="visual-orb"></span><div class="mini-dashboard"><div class="mini-top"><i></i><i></i><i></i></div><div class="mini-label">LOAN OVERVIEW</div><div class="mini-amount">₹ 2,40,000</div><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mini-lines"><i></i><i></i><i></i></div></div><span class="visual-index">01</span></div>
+          <div class="project-info"><div class="project-kicker">WEB APPLICATION · PYTHON</div><h3>Loan Management System</h3><p>A project focused on organizing loan-related information and streamlining application workflows.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>Database</span></div><a class="project-link" href="#contact" aria-label="Ask about Loan Management System">Discuss project <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-tasks"><div class="task-board"><div class="task-board-title">WEEKLY FOCUS <span>•••</span></div><div class="task-progress"><span></span></div><div class="task-row"><i></i><span>Plan sprint</span><b>✓</b></div><div class="task-row"><i></i><span>Build interface</span><b>✓</b></div><div class="task-row"><i></i><span>Review tasks</span><b>·</b></div></div><span class="visual-index">02</span></div>
+          <div class="project-info"><div class="project-kicker">FULL STACK · WEB APP</div><h3>Team Task Manager</h3><p>A task management concept for organizing work, monitoring progress, and coordinating team activities.</p><div class="tag-list"><span>React</span><span>Flask</span><span>API</span></div><a class="project-link" href="#contact" aria-label="Ask about Team Task Manager">Discuss project <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-hotel"><div class="hotel-window"><span class="hotel-sun"></span><div class="hotel-horizon"></div><div class="hotel-building"></div><div class="hotel-foreground"></div></div><span class="visual-index">03</span></div>
+          <div class="project-info"><div class="project-kicker">WEB EXPERIENCE · CLOUD</div><h3>Hotel Joyora Website</h3><p>A hotel website project exploring web presentation, hosting, and Firebase data integration.</p><div class="tag-list"><span>HTML/CSS</span><span>Firebase</span><span>Firestore</span></div><a class="project-link" href="#contact" aria-label="Ask about Hotel Joyora Website">Discuss project <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="small-note">Project summaries are editable examples. Update them to reflect the exact features you implemented and add your live demos or repositories.</p>
+    </section>
+
+    <section class="section section-tinted" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / THE JOURNEY SO FAR</p>
+          <h2>Every step is <span class="gradient-text">part of the story.</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-entry reveal"><div class="timeline-date">SEP 2025 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE</p><h3>Software Developer Trainee</h3><h4>SJS Digital Solutions Pvt Ltd · Bengaluru</h4><p>Building practical development experience across web applications, database work, debugging, and software delivery.</p></div></article>
+          <article class="timeline-entry reveal"><div class="timeline-date">2020 — 2024</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EDUCATION</p><h3>B.E. Computer Science & Engineering</h3><h4>Graduated in 2024</h4><p>Developed a foundation in programming, databases, software engineering, and computer science concepts.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact">
+      <div class="contact-panel reveal">
+        <div class="contact-decoration">✳</div>
+        <p class="eyebrow">05 / YOUR NEXT COLLABORATOR?</p>
+        <h2>Have an idea?<br><span class="gradient-text">Let's make it real.</span></h2>
+        <p class="contact-copy">I'm always interested in connecting about software, creative ideas, and meaningful opportunities.</p>
+        <form id="contact-form" class="contact-form">
+          <div class="input-pair">
+            <label><span>Your name</span><input type="text" id="contact-name" placeholder="Name" required></label>
+            <label><span>Your email</span><input type="email" id="contact-email" placeholder="name@example.com" required></label>
+          </div>
+          <label><span>Your message</span><textarea id="contact-message" rows="4" placeholder="Tell me a little about it..." required></textarea></label>
+          <button type="submit" class="button button-primary">Prepare message <span>↗</span></button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">manu<span>.</span></a>
+      <p>Designed with intention. Built with curiosity.</p>
+      <a href="#top" class="back-top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
